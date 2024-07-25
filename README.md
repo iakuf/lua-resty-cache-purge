@@ -7,9 +7,7 @@ A Lua module for dynamically purging cache in Nginx, with support for custom cac
 To install this module, you can use the OpenResty Package Manager (opm):
 
 ```sh
-
 opm get iakuf/lua-resty-cache-purge
-
 ```
 
 
@@ -20,7 +18,6 @@ opm get iakuf/lua-resty-cache-purge
 Add the following configuration to your nginx.conf file:
 
 ```nginx
-
 http {
     lua_package_path "/path/to/lib/?.lua;;";
 
@@ -38,7 +35,6 @@ http {
         }
     }
 }
-
 ```
 
 ### Purge Cache Request
@@ -46,10 +42,7 @@ http {
 To purge the cache, make a request like this:
 
 ```shell
-
 curl -sv http://127.0.0.1:8083/purge?key=http/depot/394360/chunk/763094ad824fac2c4ac7d912474533eeee075dfc
-
-
 ```
 
 ## API
