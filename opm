@@ -1,0 +1,7 @@
+name = "iakuf/lua-resty-cache-purge"
+version = "0.1"
+summary = "A Lua module for purging cache in Nginx"
+description = "A Lua module for dynamically purging cache in Nginx, with support for custom cache paths and levels."
+author = "Fu Kai <iakuf@163.com>"
+homepage = "https://github.com/iakuf/lua-resty-cache-purge.git"
+license = "MIT"
