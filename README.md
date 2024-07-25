@@ -19,7 +19,7 @@ Add the following configuration to your nginx.conf file:
 
 ```nginx
 http {
-    lua_package_path "/path/to/lib/?.lua;;";
+    lua_package_path "/usr/local/openresty/site/lualib/?.lua;;";
 
     server {
         listen 80;
@@ -42,7 +42,7 @@ http {
 To purge the cache, make a request like this:
 
 ```shell
-curl -sv http://127.0.0.1:8083/purge?key=http/depot/394360/chunk/763094ad824fac2c4ac7d912474533eeee075dfc
+curl -sv http://127.0.0.1:80/purge?key=http/depot/394360/chunk/763094ad824fac2c4ac7d912474533eeee075dfc
 ```
 
 ## API
